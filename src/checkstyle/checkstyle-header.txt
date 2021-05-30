@@ -1,6 +1,4 @@
-^\Q/*\E$
-^\Q * Copyright \E20\d\d\-20\d\d\Q MrCool.\E$
-^\Q *\E$
-^\Q */\E$
-^$
-^.*$
+/*
+ * Copyright 2021-2021 MrCool.
+ *
+ */
