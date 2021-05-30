@@ -1,0 +1,6 @@
+^\Q/*\E$
+^\Q * Copyright \E20\d\d\-20\d\d\Q MrCool.\E$
+^\Q *\E$
+^\Q */\E$
+^$
+^.*$
