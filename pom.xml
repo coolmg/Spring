@@ -5,6 +5,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>AOP</module>
+		<module>SAML</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -19,7 +20,9 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
-		<property key="checkstyle.header.file" file="src/checkstyle/checkstyle-header.txt"/>
+		<spring-security.version>5.5.0</spring-security.version>
+		<spring.version>5.3.7</spring.version>
+		<spring-framework.version>5.3.7</spring-framework.version>
 	</properties>
 
 	<dependencies>
