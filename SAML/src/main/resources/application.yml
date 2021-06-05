@@ -1,0 +1,33 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /samlapp
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+    org.springframework.security.saml: INFO
+    org.opensaml.xmlsec: WARN
+
+spring:
+  output:
+    ansi:
+    enabled: always
+  security:
+    saml2:
+      relyingparty:
+        registration:
+          samlapp:
+            entity-id: http://localhost:8080/samlapp/saml2/service-provider-metadata/samlapp
+            signing:
+              credentials:
+                - private-key-location: "classpath:credentials/private.key"
+                  certificate-location: "classpath:credentials/public.cer"
+            identityprovider:
+              entity-id: http://www.okta.com/exk9izt3dw1gk2fjd357
+              singlesignon:
+                sign-request: false
+                url: https://dev-575849.okta.com/app/dev-575849_springsaml_1/exk9izt3dw1gk2fjd357/sso/saml
+              metadata-uri: "classpath:credentials/idpmetadata.xml"

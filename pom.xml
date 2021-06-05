@@ -5,6 +5,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>AOP</module>
+		<module>SAML</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -14,13 +15,14 @@
 	</parent>
 	<groupId>com.mrcool</groupId>
 	<artifactId>springplay</artifactId>
-	<version>${project.version}</version>
+	<version>1.0.0</version>
 	<name>SpringPlay</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
-		<property key="checkstyle.header.file" file="src/checkstyle/checkstyle-header.txt"/>
-		<project.version>1.0.0</project.version>
+		<spring-security.version>5.5.0</spring-security.version>
+		<spring.version>5.3.7</spring.version>
+		<spring-framework.version>5.3.7</spring-framework.version>
 	</properties>
 
 	<dependencies>
