@@ -14,12 +14,13 @@
 	</parent>
 	<groupId>com.mrcool</groupId>
 	<artifactId>springplay</artifactId>
-	<version>1.0.0</version>
+	<version>${project.version}</version>
 	<name>SpringPlay</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 		<property key="checkstyle.header.file" file="src/checkstyle/checkstyle-header.txt"/>
+		<project.version>1.0.0</project.version>
 	</properties>
 
 	<dependencies>
