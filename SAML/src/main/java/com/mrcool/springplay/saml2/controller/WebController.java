@@ -20,16 +20,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class WebController {
 
-	@GetMapping("/model")
-	public String index(@AuthenticationPrincipal Saml2AuthenticatedPrincipal principal, Model model) {
+	@GetMapping("/")
+	public String index(Model model, @AuthenticationPrincipal Saml2AuthenticatedPrincipal principal) {
 		String emailAddress = principal.getFirstAttribute("emailAddress");
 		model.addAttribute("emailAddress", emailAddress);
 		model.addAttribute("userAttributes", principal.getAttributes());
-		return "index";
-	}
-
-	@GetMapping("/")
-	public String index() {
 		return "index";
 	}
 
