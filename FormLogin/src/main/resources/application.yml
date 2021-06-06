@@ -1,0 +1,10 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /formlogin
+
+logging:
+  level:
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+    org.springframework.security.saml: INFO
