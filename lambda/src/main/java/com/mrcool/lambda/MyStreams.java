@@ -12,4 +12,5 @@ package com.mrcool.lambda;
  * @since 1.0.0
  */
 public class MyStreams {
+
 }

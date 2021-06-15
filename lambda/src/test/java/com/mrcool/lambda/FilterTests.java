@@ -5,9 +5,9 @@
 
 package com.mrcool.lambda;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.stream.IntStream;
+
+import org.junit.jupiter.api.Test;
 
 /**
  * Class name.
@@ -20,7 +20,7 @@ public class FilterTests {
 	@Test
 	void testIntSupplier() {
 		IntStream incoming = IntStream.generate(new GiveMeAnInt());
-		incoming.forEach(System.out::println);
+		// incoming.forEach(System.out::println);
 	}
 
 	@Test

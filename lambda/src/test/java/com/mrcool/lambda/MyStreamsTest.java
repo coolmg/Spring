@@ -5,13 +5,11 @@
 
 package com.mrcool.lambda;
 
+import java.util.ArrayList;
+
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.stream.Stream;
-
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Class name.
@@ -19,20 +17,18 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author Mahendra Gadila.
  * @since 1.0.0
  */
-class MyStreamsTest {
+class MyStreamsTests {
 
-    @Test
-    void test(){
-        ArrayList<String> names = new ArrayList<>();
-        names.add("Ann");
-        names.add("Barry");
-        names.add("Cixin");
-        names.add("Dante");
+	@Test
+	void test() {
+		ArrayList<String> names = new ArrayList<>();
+		names.add("Ann");
+		names.add("Barry");
+		names.add("Cixin");
+		names.add("Dante");
 
-        names.stream().forEach(System.out::println);
-        assertThat(names.stream().count()).isEqualTo(4);
-    }
-
-
+		names.stream().forEach(System.out::println);
+		assertThat(names.stream().count()).isEqualTo(4);
+	}
 
 }

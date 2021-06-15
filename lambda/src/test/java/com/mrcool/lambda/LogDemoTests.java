@@ -5,11 +5,11 @@
 
 package com.mrcool.lambda;
 
-import org.junit.jupiter.api.Test;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+
+import org.junit.jupiter.api.Test;
 
 /**
  * Class name.
@@ -31,10 +31,9 @@ public class LogDemoTests {
 				.count();
 		System.out.println("Found " + result + " lines in the log file.");
 
-        result = Files.lines(Path.of("src/main/resources/sample-access.log")).filter(line -> line.contains("130.211.62.52"))
-                .count();
-        System.out.println("Found " + result + " requests from " + "130.211.62.52" + ".");
+		result = Files.lines(Path.of("src/main/resources/sample-access.log"))
+				.filter(line -> line.contains("130.211.62.52")).count();
+		System.out.println("Found " + result + " requests from " + "130.211.62.52" + ".");
 	}
-
 
 }

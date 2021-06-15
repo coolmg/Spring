@@ -53,4 +53,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	public AuthenticationProvider authenticationProvider() {
 		return new FormAuthenticationProvider();
 	}
+
 }
