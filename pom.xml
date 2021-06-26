@@ -8,6 +8,7 @@
 		<module>SAML</module>
         <module>FormLogin</module>
 		<module>lambda</module>
+		<module>OAuth2</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
