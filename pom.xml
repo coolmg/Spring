@@ -9,7 +9,8 @@
         <module>FormLogin</module>
 		<module>lambda</module>
 		<module>OAuth2</module>
-	</modules>
+        <module>DesignPatterns</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
