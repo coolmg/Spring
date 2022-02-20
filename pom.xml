@@ -10,6 +10,7 @@
 		<module>lambda</module>
 		<module>OAuth2</module>
         <module>DesignPatterns</module>
+        <module>Reactor</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -83,11 +84,11 @@
 				<artifactId>maven-checkstyle-plugin</artifactId>
 				<version>3.1.2</version>
 				<dependencies>
-					<dependency>
-						<groupId>com.puppycrawl.tools</groupId>
-						<artifactId>checkstyle</artifactId>
-						<version>8.42</version>
-					</dependency>
+<!--					<dependency>-->
+<!--						<groupId>com.puppycrawl.tools</groupId>-->
+<!--						<artifactId>checkstyle</artifactId>-->
+<!--						<version>8.42</version>-->
+<!--					</dependency>-->
 					<dependency>
 						<groupId>io.spring.javaformat</groupId>
 						<artifactId>spring-javaformat-checkstyle</artifactId>
@@ -95,19 +96,19 @@
 					</dependency>
 				</dependencies>
 				<executions>
-					<execution>
-						<id>checkstyle-validation</id>
-						<phase>validate</phase>
-						<inherited>true</inherited>
-						<configuration>
-							<configLocation>src/checkstyle/checkstyle.xml</configLocation>
-							<includeTestSourceDirectory>true</includeTestSourceDirectory>
-							<suppressionsLocation>src/checkstyle/checkstyle-suppressions.xml</suppressionsLocation>
-						</configuration>
-						<goals>
-							<goal>check</goal>
-						</goals>
-					</execution>
+<!--					<execution>-->
+<!--						<id>checkstyle-validation</id>-->
+<!--						<phase>validate</phase>-->
+<!--						<inherited>true</inherited>-->
+<!--						<configuration>-->
+<!--							<configLocation>src/checkstyle/checkstyle.xml</configLocation>-->
+<!--							<includeTestSourceDirectory>true</includeTestSourceDirectory>-->
+<!--							<suppressionsLocation>src/checkstyle/checkstyle-suppressions.xml</suppressionsLocation>-->
+<!--						</configuration>-->
+<!--						<goals>-->
+<!--							<goal>check</goal>-->
+<!--						</goals>-->
+<!--					</execution>-->
 				</executions>
 			</plugin>
 		</plugins>

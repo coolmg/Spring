@@ -1,5 +1,11 @@
+/*
+ * Copyright 2021-2021 MrCool.
+ *
+ */
 package com.mrcool.dp.observer;
 
 public interface Observer {
-    void update();
+
+	void update();
+
 }
