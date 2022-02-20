@@ -24,7 +24,6 @@ class WeatherDataTest {
         }
 
         weatherData.removeObserver(display1);
-
     }
 
 }
