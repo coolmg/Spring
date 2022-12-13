@@ -6,16 +6,17 @@ import java.util.List;
 import java.util.Optional;
 
 public interface OfficerDAO {
-    Officer save(Officer officer);
 
-    Optional<Officer> findById(Integer id);
+	Officer save(Officer officer);
 
-    List<Officer> findAll();
+	Optional<Officer> findById(Integer id);
 
-    long count();
+	List<Officer> findAll();
 
-    void delete(Officer officer);
+	long count();
 
-    boolean existsById(Integer id);
+	void delete(Officer officer);
+
+	boolean existsById(Integer id);
 
 }

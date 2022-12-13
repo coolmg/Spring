@@ -1,24 +1,31 @@
 package com.mrcool.data.entities;
 
+import lombok.*;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
+import javax.persistence.*;
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
+@Table(name = "officers")
 public class Officer {
-    private Integer id;
-    private Rank rank;
-    private String firstName;
-    private String lastName;
 
-    public Officer(Rank rank, String firstName, String lastName) {
-        this.rank = rank;
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id", nullable = false)
+	private Integer id;
+
+	@Enumerated(EnumType.STRING)
+	private Rank rank;
+
+	private String firstName;
+
+	private String lastName;
+
+	public Officer(Rank rank, String firstName, String lastName) {
+		this.rank = rank;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
 }
