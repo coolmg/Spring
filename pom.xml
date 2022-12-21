@@ -15,6 +15,7 @@
         <module>ReactJS</module>
         <module>webapp</module>
         <module>SpringData</module>
+        <module>kafka-streams</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
