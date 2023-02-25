@@ -1,13 +1,9 @@
 package com.mrcool.tomcatspring;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class TomcatSpringApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(TomcatSpringApplication.class, args);
-	}
+public class TomcatSpringApplication extends SpringBootServletInitializer {
 
 }
